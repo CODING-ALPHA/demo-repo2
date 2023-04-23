@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #171717;
+    /* top: -200vh; */
+    height: 100vh;
+
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-top: 10px; */
+    padding: 10px 10px 10px 10px;
+    /* height: 50px; */
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.221);
+    font-size: 10px;
+}
+
+.navbar ul li{
+    display: inline;
+    list-style: none;
+    padding: 3px;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    transition: ease 0.5s;
+}
+
+
+.navbar h2{
+    color: #fff;
+    font-size: 10px;
+}
+
+
+.active,.navbar ul li:active{
+    /* color: violet; */
+    background: linear-gradient(90deg,rgba(0, 81, 255, 0.761),red);
+    border-radius: 20px;
+}
+
+
+.fa{
+    padding: 10px;
+    color: #fff;
+    /* text-align: center; */
+}
+
+.fish{
+    margin-left: 5px;
+}
+
+.big{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./pexels-august-de-richelieu-4427618.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.content{
+    color: #fff;
+    text-align: center;
+    margin-top: 15vh;
+    /* line-height: 4vh; */
+}
+.content p{
+    color: rgb(204, 204, 204);
+}
+
+#first{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+#second{
+    font-size: 27px;
+}
+
+#third{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+button{
+    /* margin-bottom: 10px; */
+    /* height: 40px; */
+    padding: 10px 10px 10px 10px;
+    /* width: 20%; */
+    background: transparent;
+    border: 1px solid rgba(206, 206, 206, 0.972);
+    border-radius: 15px 15px 15px 15px;
+    color: #fff;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.but1{
+    background: linear-gradient(90deg,rgba(0, 81, 255, 0.761),red);
+}
+
+.but1:active {
+    background: transparent;
+}
+
+.but2:active{
+    background: linear-gradient(90deg,rgba(0, 81, 255, 0.761),red);
+    
+}
+
+.container{
+    display: block;
+    background: #171717;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    margin-top: -35vh;
+}
+
+.card{
+    padding-top: 20px;
+    border-radius: 15px 15px 15px 15px;
+    width: 370px;
+    height: 400px;
+    margin: 20px;
+    margin: 20px auto;
+}
+
+.why{
+    margin: 20px;
+    margin: 20px auto;
+    width: 350px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.down{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 60px;
+}
+
+.fa-bolt{
+    color: rgba(0, 208, 255, 0.966);
+    background-color:rgba(0, 225, 255, 0.068) ;
+}
+.fa-map{
+    color: rgba(255, 85, 0, 0.851);
+    background-color:rgba(255, 30, 0, 0.122) ;
+}
+.fa-mobile{
+    color: rgba(136, 0, 255, 0.929);
+    background-color:rgba(93, 0, 255, 0.237) ;
+}
+
+/* .card:hover{
+    background: rgba(255, 255, 255, 0.095);
+} */
+
+
+
+
+@media only screen and (min-width:300px) {
+    [class*="col-"]{
+        width: 100%;
+    }
+
+    .navbar h2{
+        font-size: 0px;
+    }
+
+    .navbar ul li{
+     padding-inline: 0.5px;
+    }
+
+    .navbar ul li a{
+        text-decoration: none;
+        color: #fff;
+        background: none;
+        padding: none;
+    }
+
+    .navbar .active:active{
+        border: 1px solid rgba(255, 255, 255, 0.68);
+        background: transparent;
+    }
+
+    #first{
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    
+    #second{
+        font-size: 27px;
+    }
+    
+    #third{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    
+    .card:active{
+        background: rgba(255, 255, 255, 0.095);
+    }
+
+}
+
+@media only screen and (min-width:370px) {
+    [class*="col-"]{
+        width: 100%;
+    }
+
+    .navbar h2{
+        font-size: 0px;
+        align-items: center;
+    }
+
+    .navbar ul li{
+     padding-inline: 3px;
+    }
+
+    #first{
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    
+    #second{
+        font-size: 30px;
+    }
+    
+    #third{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .card:active{
+        background: rgba(255, 255, 255, 0.095);
+    }
+    
+}
+
+@media only screen and (min-width:600px) {
+    [class*="col-"]{
+        width: 100%;
+    }
+
+    .navbar{
+        font-size: 15px;
+        transition: ease 0.5s;
+    }
+
+    .navbar h2{
+        font-size: 0px;
+        align-items: center;
+    }
+
+    .navbar ul li{
+     padding-inline: 5px;
+    }
+
+    #first{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    
+    #second{
+        font-size: 40px;
+    }
+    
+    #third{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .card{
+    width: 500px;
+    height: 400px;
+}
+
+.why{
+    width: 400px;
+    font-size: 20px;
+}
+
+
+    .card:active{
+        background: rgba(255, 255, 255, 0.095);
+    }
+    
+}
+
+@media only screen and (min-width:768px) {
+    [class*="col-"]{
+        width: 100%;
+    }
+
+    .navbar{
+        font-size: 15px;
+        transition: ease 0.5s;
+    }
+
+    .navbar h2{
+        font-size: 20px;
+        align-items: center;
+    }
+
+    .navbar ul li{
+     padding-inline: 8px;
+    }
+
+    .container{
+        display: flex;
+    }
+
+
+    .why{
+        font-size: 15px;
+        width: 220px;
+    }
+
+    
+    
+
+    #first{
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+    
+    #second{
+        font-size: 50px;
+    }
+    
+    #third{
+        margin-top: 10px;
+        font-size: 22px;
+    }
+
+    .card:active{
+        background: rgba(255, 255, 255, 0.095);
+    }
+    
+}
+
+@media only screen and (min-width:850px) {
+    .why{
+        font-size: 18px;
+        width: 230px;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    [class*="col-"]{
+        width: 100%;
+    }
+
+    .navbar{
+        font-size: 15px;
+        transition: ease 0.5s;
+    }
+
+    .navbar h2{
+        font-size: 30px;
+        align-items: center;
+    }
+
+    .navbar ul li{
+        /* padding: 10px; */
+     padding-inline: 20px;
+    }
+
+    
+
+    .active{
+        transition: 0.5s;
+    }
+
+     .navbar .active:hover{
+        border: 1px solid rgba(255, 255, 255, 0.68);
+        background: transparent;
+    }
+
+    .navbar ul li:hover{
+        /* color: violet; */
+        background: linear-gradient(90deg,rgba(0, 81, 255, 0.761),red);
+        border-radius: 20px;
+    }
+
+    #first{
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    
+    #second{
+        font-size: 75px;
+    }
+    
+    #third{
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    .card{
+        width: 700px;
+        height: 400px;
+    }
+    
+    .why{
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .but1:hover{
+        background: transparent;
+    }
+    
+    
+    .but2:hover{
+        background: linear-gradient(90deg,rgba(0, 81, 255, 0.761),red);
+    }
+
+
+
+    /* .container{
+        background-color: #171717;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        margin-top: -30vh;
+    }
+     */
+
+     .container{
+        display: flex;
+        background: #171717;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        padding: 20px;
+        margin-top: -30vh;
+    }
+    
+    
+
+    .card:hover{
+        background: rgba(255, 255, 255, 0.095);
+    }
+    
+    
+    .down{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 60px;
+    }
+    
+}
+
+
